@@ -1,0 +1,260 @@
+:root {
+    --primary-color: turquoise;
+    --line-color: #ddd;
+}
+
+.intro {
+    position: relative;
+    background: url(../images/flower.jpg) no-repeat center center/cover;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgb(173, 173, 173));
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: transparent;
+    background: url(../images/tbg.png);
+    -webkit-background-clip: text;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    -webkit-text-stroke: 1px navy;
+}
+
+.intro .wrap {
+    position: relative;
+}
+
+.intro:before {
+    content: "";
+    position: absolute;
+    top: 120px;
+    bottom: calc(50vh + 60px);
+    left: 50%;
+    width: 1px;
+    background: #333;
+}
+
+
+.intro:after {
+    content: "";
+    position: absolute;
+    top: calc(50vh + 60px);
+    bottom: 120px;
+    left: 50%;
+    width: 1px;
+    background: #333;
+}
+
+.intro figure {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.intro .tit {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 16px;
+}
+
+
+.intro .year {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 16px;
+}
+
+
+.navi img {
+    animation: navi 0.5s infinite;
+}
+
+
+@keyframes navi {
+    0% {
+        transform: scaleY(0.5);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.path svg {
+    stroke: none;
+}
+
+.pt {
+    overflow: hidden;
+}
+
+.pt .inner {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 15px;
+}
+
+.pt .inner .desc {}
+
+.l_btn {
+    display: inline-block;
+    padding: 8px 24px;
+    background: var(--primary-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.a_color {
+    font-size: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: var(--i);
+    border-radius: 50%;
+    transform: translate(0, 40px);
+    opacity: 0;
+
+    vertical-align: top;
+    border: 2px solid var(--line-color);
+}
+
+.pt .case {
+    width: 60rem;
+    height: 40rem;
+    background: #f9f9f9;
+    box-shadow: 15px 15px 30px #d3d3d3, -15px -15px 30px #ffffff;
+    border-radius: 4rem;
+    border: 10px solid #ffffff;
+    outline: 1px solid #dddddd;
+    overflow: hidden;
+}
+
+.pt .case img {
+    transform: translate(0, 0);
+    transition: 5s;
+}
+
+
+.pt .case:hover img {
+    transform: translate(0, calc(-100% + 40rem));
+}
+
+
+
+.pt .case {
+    width: 60rem;
+    height: 40rem;
+    background: #f9f9f9;
+    box-shadow: 15px 15px 30px #d3d3d3, -15px -15px 30px #ffffff;
+    border-radius: 4rem;
+    border: 10px solid #ffffff;
+    outline: 1px solid #dddddd;
+    overflow: hidden;
+}
+
+.pt .case img {
+    transform: translate(0, 0);
+    transition: 5s;
+}
+
+
+.pt .case:hover img {
+    transform: translate(0, calc(-100% + 40rem));
+}
+
+.a_color {
+    font-size: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: var(--i);
+    border-radius: 50%;
+    transform: translate(0, 40px);
+    opacity: 0;
+
+    vertical-align: top;
+    border: 2px solid var(--line-color);
+}
+
+.pt .case {
+    width: 60rem;
+    height: 40rem;
+    background: #f9f9f9;
+    box-shadow: 15px 15px 30px #d3d3d3, -15px -15px 30px #ffffff;
+    border-radius: 4rem;
+    border: 10px solid #ffffff;
+    outline: 1px solid #dddddd;
+    overflow: hidden;
+}
+
+
+.pt .case img {
+    transform: translate(0, 0);
+    transition: 5s;
+}
+
+
+.pt .case:hover img {
+    transform: translate(0, calc(-100% + 40rem));
+}
+
+.a_color {
+    font-size: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: var(--i);
+    border-radius: 50%;
+    transform: translate(0, 40px);
+    opacity: 0;
+
+    vertical-align: top;
+    border: 2px solid var(--line-color);
+}
+
+.pt.active .a_color {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: calc(var(--n) + 0.5s);
+}
+
+
+.pt .case {
+    width: 60rem;
+    height: 40rem;
+    background: #f9f9f9;
+    box-shadow: 15px 15px 30px #d3d3d3, -15px -15px 30px #ffffff;
+    border-radius: 4rem;
+    border: 10px solid #ffffff;
+    outline: 1px solid #dddddd;
+    overflow: hidden;
+}
+
+.pt .case img {
+    transform: translate(0, 0);
+    transition: 5s;
+}
+
+
+.pt .case:hover img {
+    transform: translate(0, calc(-100% + 40rem));
+}
